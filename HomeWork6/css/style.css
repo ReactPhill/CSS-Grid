@@ -552,6 +552,12 @@ body{
 /* device 
 ======================*/
 
+.container__device{
+    background: url('../img/4_Devices/device.png') no-repeat left , 
+                url('../img/4_Devices/devices_left.jpg') 0 135px / 42% 65% no-repeat ; 
+    height: calc(100vh - 100px);
+}
+
 .device{
     height: 635px;
     margin: 200px 0;
@@ -587,14 +593,17 @@ body{
     border-radius: 3px;
 }
 
-.tablet{
-    background: url('../img/4_Devices/device.png'), 
-    url('../img/4_Devices/devices_left.jpg') 0 0 / 72% 82%;
-    background-repeat: no-repeat;
+.cir{
+    position: relative;
+    right: 380px;
+    top: 150px;
 }
 
 .iphone{
     background: url('../img/4_Devices/device.png') 175% 0% no-repeat;
+    position: relative;
+    top: 120px;
+    right: 30px;
 }
 
 .iphone__container{
@@ -607,10 +616,8 @@ body{
     margin-top: 200px;
 
     position: relative;
-    right: 300px;
+    right: 305px;
 }
-
-.iphone__content{}
 
 .iphone__link1{
     display: flex;
@@ -699,13 +706,15 @@ body{
     font-weight: 300;
     font-size: 48px;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 .project__text{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     color: #333333;
+    margin-bottom: 30px;
 }
 
 .project__link__title{
@@ -715,11 +724,13 @@ body{
     color: #000000;
 }
 .project__link__text{
+    display: block;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
     color: #333333;
+    margin-bottom: 60px ;
 }
 
 .project__btn a{
@@ -749,29 +760,23 @@ body{
     color: #ffffff;
 }
 
-
-.icon__mic svg{
-    font-size: 50px;
+.device__project, .i svg{
+    font-size: 40px;
     color: #c99f2c;
-    position: relative;
-    right: 50px;
-    top: 20px;
 }
 
-.icon__earphones svg{
-    font-size: 50px;
+.device__project, .i svg{
+    font-size: 40px;
     color: #c99f2c;
-    position: relative;
-    right: 70px;
-    top: 20px;
 }
 
-.icon__water svg{
-    font-size: 50px;
+.device__project, .i svg{
+    font-size: 40px;
     color: #c99f2c;
-    position: relative;
-    right: 70px;
-    top: 20px;
+}
+
+.device__project{
+    margin-top: 30px;
 }
 
 
@@ -782,214 +787,145 @@ body{
 /* stats
 ======================*/
 
-.stats{
+
+.container5{
     background: url('../img/5_Stats/bgc-stats.jpg');
     height: calc(100vh - 100px);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
+    margin: 0 auto;
 }
 
-.stats__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 130px auto 120px auto;
-}
-
-.stats__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    margin: 0 50px;
-}
-
-.stats__title{
+.title__stats{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 48px;
     color: #ffffff;
 
-    margin: 0 auto;
+    margin: 140px 0 130px 0;
 }
 
-.stat__cost{
-    font-family: 'Lato', sans-serif;
-    color: #c89d28;
-
-    font-size: 80px;
+.container5 .cost{
+    display: block;
+    font-family: 'lato', sans-serif;
     font-weight: 300;
+    font-size: 80px;
+    color: #c89d28;
 }
-
-.stats__item__title{
+.container5 .title{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    font-size: 22px;
-    color: #efefef;
-
-    margin: 45px 0; 
+    font-size: 21px;
+    color: #ffffff;
+    
 }
-
-.stats__item__text{
+.container5 .text{
+    display: block;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    line-height: 24px;
-    color: #999999;
+    color: #7e7e7e;
+
+    margin: 40px 0 60px 0;
 }
 
-.stats__item__button a{
-    background: #ffffff;
+.container5 i{
+    display: block;
+    height: 380px;
+    width: 1px;
+    background: #252525;
+    margin: 0 50px;
+}
+
+.container5 .btn{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #333333;
 
+    background: #ffffff;
+    width: 207px;
     height: 60px;
-    width: 200px;
     border-radius: 30px;
 
-    margin-top: 65px;
-
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    text-decoration: none;
-
-    transition-duration: .5s;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.stats__item__button a:hover{
-    background: #1f2021;
+.container5 .btn:hover{
     color: #ffffff;
+    background: #333333;
 }
 
-.stats i{
-    background: #252525;
-    width: 1px;
-    height: 380px;
-    margin: 0 45px;
+/* end-stats */
 
-}
-
-.stats__info{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    color: #7e7e7e;
-}
-
-/* end-stats
-======================*/
 
 /* drop */
 
-.drop{
-    margin: 70px 0 100px 0;
+.container8{
+    margin: 200px 0 200px 0;
 }
 
-.drop__container{
-    display: grid;
-    grid-template-columns: 1.4fr 1.2fr 1fr;
-    justify-content: center;
+.container8 .right_text p{
+    padding-top: 30px;
 }
 
-.drop__text{
+.container8 .left_icon img{
+    margin-left: 15px;
+}
+
+.container8 .left_icon img:first-child{
+    margin-top: 25px;
+    margin-bottom: 90px;
+}
+
+.container8 .left_icon img:nth-child(2){
+    margin-bottom: 120px;
+}
+
+.container8 .left_content h4{
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 30px;
     color: #000000;
-
-    margin: 80px 0 20px 0;
 }
 
-.drop__text span{
-    font-weight: 500;
+.container8 .left_content p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
 }
 
-.drop__text{}
+.container8 .span__bold{
+    font-weight: 700;
+}
 
-
-
-.drop__cotnent__title{
-    margin-bottom: 10px;
-
+.right_text span{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    color: #000000;
 }
 
-.drop__block1::before{
-    content: url('../img/7_Drop/icon1.png');
-    position: relative;
-    right: 75px;
-    top: 60px;
-}
-
-.drop__block2::before{
-    content: url('../img/7_Drop/icon2.png');
-    position: relative;
-    right: 75px;
-    top: 60px;
-}
-
-.drop__block3::before{
-    content: url('../img/7_Drop/icon3.png');
-    position: relative;
-    right: 75px;
-    top: 60px;
-}
-
-.drop__block4::before{
-    content: url('../img/7_Drop/icon4.png');
-    position: relative;
-    right: 75px;
-    top: 60px;
-}
-
-.drop__block5::before{
-    content: url('../img/7_Drop/icon5.png');
-    position: relative;
-    right: 75px;
-    top: 60px;
-}
-
-.drop__block6::before{
-    content: url('../img/7_Drop/icon6.png');
-    position: relative;
-    right: 75px;
-    top: 60px;
-}
-
-
-.drop__block5{
-    margin-bottom: 20px;
-}
-
-.drop__content:nth-child(1){
-    position: relative;
-    bottom:  -6px;
-}
-
-.drop__content__text{
+.right_text p{
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
-    color: #7e7e7e;
-
-    line-height: 22px;
+    color: #686868;
 }
 
 /* end-drop */
+
+/* fact */
+.facts .stats__info{
+    margin-top: 125px;
+    font-size: 24px;
+    color: #909090;
+}
+
+/* end-fact */
 
 
 
